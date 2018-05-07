@@ -27,6 +27,23 @@
 
     console.log(lala);
 
+    // Intro Arrow Function
+    const estados = ['São Paulo', 'Rio de Janeiro', 'Rio Grande do Sul'];
+
+    const love = estados.map(function(name) {
+      return `I love ${name}!`;
+    });
+
+    const loveArrow = estados.map((name) =>{
+      return `I love ${name}!`;
+    });
+
+    const loveChain = estados.filter(name => name === 'Rio de Janeiro').map(name => `I love ${name}!`);
+
+    console.log(love);
+    console.log(loveArrow);
+    console.log(loveChain);
+
 
 
 </script>
